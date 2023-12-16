@@ -1,0 +1,13 @@
+chmod -x node.sh setup.sh
+
+./setup.sh
+
+. ./node.sh
+
+nano .env and copy your API: https://api-link - to setup your API link
+
+screen -S zora
+
+docker compose up --build
+
+screen -r zora
